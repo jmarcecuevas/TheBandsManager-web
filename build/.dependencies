@@ -1,4 +1,7 @@
 dependencies:
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails.plugins/spring-security-core/3.2.1/787fbf150eed167b226be8cc3d7c84d0370a5eaa/spring-security-core-3.2.1.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails.plugins/spring-security-ui/3.1.2/a6f70f7f3d2d98e8b18d387f6f497b1516d3102e/spring-security-ui-3.1.2.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails.plugins/mail/2.0.0/e329ffe5c97f6949c61f0107b1b7e3d720ef2052/mail-2.0.0.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.8.RELEASE/ebc00a0e46753d90431fdcc5e3d6b9fd3bf1564a/spring-boot-starter-logging-1.5.8.RELEASE.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.8.RELEASE/e4f2efa4c319f4e3613d94fbccfdb5ccda6873e3/spring-boot-autoconfigure-1.5.8.RELEASE.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.3.2/824db64a3117fdc40b2a6bd4b5444e536453e51d/grails-core-3.3.2.jar
@@ -33,6 +36,11 @@ dependencies:
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/3.6.0/f4cbab5e4d9d253281e823eef0ea00c997d1fcc6/selenium-firefox-driver-3.6.0.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.6.0/9fc29afc07aa346ef0a84bdb4ddf68c50b84dfa9/selenium-remote-driver-3.6.0.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.6.0/7b1b49f371b754e4d5cdf5e0b98730771300bef6/selenium-api-3.6.0.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.4/9022b1eedfafa11039597b1c1918c1abe414df93/ehcache-2.10.4.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c0e47a47036c94d6fdd02696bf52be6d1adbd4d/spring-security-core-4.2.3.RELEASE.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.3.RELEASE/7a03e737484ca232d7146852f06d067ac21427ac/spring-security-web-4.2.3.RELEASE.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/javax.mail/javax.mail-api/1.5.6/51c7a973efb1123558b62e95e31ab03cfa00fa7a/javax.mail-api-1.5.6.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.6/ab5daef2f881c42c8e280cbe918ec4d7fdfd7efe/javax.mail-1.5.6.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/ccedfbacef4a6515d2983e3f89ed753d5d4fb665/logback-classic-1.1.11.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar
@@ -103,9 +111,11 @@ dependencies:
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.8/70539e2a07865bab38b4153da1ce599cf081790a/httpcore-4.4.8.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.2.2/5012450aee579c3118ff09461d5ce210e0cdc2a9/jna-4.2.2.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/4.2.2/30fa67b23cf2c0327a02cfaecbef76a20160e7b/jna-platform-4.2.2.jar
+- file:/Users/marcelocuevas/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.12.RELEASE/790f69f6ad7f9da8d4a92c603ad7244c398c8309/spring-expression-4.3.12.RELEASE.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/88b8df40340eed549fb07e2613879bf6b006704d/logback-core-1.1.11.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.12.RELEASE/b3fef085902993c2ef874c45c7bfd79296d5a5a4/spring-aop-4.3.12.RELEASE.jar
-- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.12.RELEASE/790f69f6ad7f9da8d4a92c603ad7244c398c8309/spring-expression-4.3.12.RELEASE.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.13/a768f5f738bed0ab0b2dd54401830739203839c6/groovy-xml-2.4.13.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-templates/2.4.13/50c6b36707328f94678892408455b7a9bfe96577/groovy-templates-2.4.13.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar
