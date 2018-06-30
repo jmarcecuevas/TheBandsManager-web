@@ -27,6 +27,7 @@ grails.plugin.springsecurity.logout.postOnly = false //allows logout to work
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 		[pattern: '/',               access: ['ROLE_ADMIN','ROLE_USER']],
 		[pattern: '/error',          access: ['permitAll']],
+		[pattern: '/inspinia/form_basic',          access: ['permitAll']],
 		[pattern: '/role/search',    access: ['ROLE_ADMIN']],
 		[pattern: '/index',          access: ['ROLE_ADMIN','ROLE_USER']],
 		[pattern: '/index.gsp',      access: ['permitAll']],
