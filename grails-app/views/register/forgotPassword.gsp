@@ -38,9 +38,9 @@
                                         Enter your username and we'll send a link to reset your password to the address we have for your account.
                                     </p>
 
-                                    <table>
-                                        <s2ui:textFieldRow name='username' size='25' labelCodeDefault='Username'/>
-                                    </table>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Username" type="text" id="username" name="${securityConfig.apf.usernameParameter}"/>
+                                    </div>
 
                                     <button type="submit" class="btn btn-primary block full-width m-b">Reset my password</button>
 
