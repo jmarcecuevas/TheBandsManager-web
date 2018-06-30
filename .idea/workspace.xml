@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a32ffae-bb9c-4cb2-b578-f0d31540c248" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/grails-app/views/login/auth.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.asscache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.asscache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/build/.dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/BootStrap$_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/BootStrap$_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/BootStrap$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/BootStrap$_closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/InspiniaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/grails/inspinia/ui/InspiniaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/spring/resources.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/init/grails/inspinia/ui/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/init/grails/inspinia/ui/BootStrap.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/login/auth.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/login/auth.gsp" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,29 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/application.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/inspinia/login.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="auth.gsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="152">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgotPassword.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/register/forgotPassword.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -71,6 +48,7 @@
       <find>m-t</find>
       <find>form-control</find>
       <find>loginButton</find>
+      <find>textFieldRow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,6 +63,7 @@
         <option value="$PROJECT_DIR$/grails-app/domain/auth/Role.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/auth/User.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/auth/UserRole.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/register/forgotPassword.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/login/auth.gsp" />
       </list>
     </option>
@@ -166,13 +145,40 @@
             <path>
               <item name="TheBandsManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheBandsManager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheBandsManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheBandsManager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Grails" />
+      <pane id="Grails">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="f1a0d8d8:GrailsRootNode" />
+              <item name="" type="3c7b8529:GrailsApplicationNode" />
+            </path>
+            <path>
+              <item name="" type="f1a0d8d8:GrailsRootNode" />
+              <item name="" type="3c7b8529:GrailsApplicationNode" />
+              <item name="views" type="a8c2cad5:GrailsPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="" type="f1a0d8d8:GrailsRootNode" />
+              <item name="" type="3c7b8529:GrailsApplicationNode" />
+              <item name="Plugins" type="aec655c9:GrailsPluginsNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,7 +257,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530328169740</updated>
-      <workItem from="1530328171367" duration="5346000" />
+      <workItem from="1530328171367" duration="8310000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1530329152102</created>
@@ -264,7 +270,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3788000" />
+    <option name="totallyTimeSpent" value="6752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
@@ -289,11 +295,11 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19972827" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19972827" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16041666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20902778" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -609,22 +615,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/inspinia/login.gsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/inspinia/register.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="36" column="85" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/inspinia/forgot_password.gsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="55" />
+          <caret selection-end-line="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/init/grails/inspinia/ui/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="333">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/register/forgotPassword.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/login/auth.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="152">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>

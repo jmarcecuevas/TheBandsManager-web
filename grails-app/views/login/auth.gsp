@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TheBandsManager | Login</title>
+    <title>TBM | Login</title>
 
     <asset:stylesheet src="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <asset:stylesheet src="application.css"/>
@@ -19,7 +19,7 @@
 <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
         <div>
-            <h1 class="logo-name">TBD</h1>
+            <h1 class="logo-name">TBM</h1>
         </div>
 
         <h3>Bienvenido a TheBandsManager</h3>
