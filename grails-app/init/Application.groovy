@@ -1,4 +1,4 @@
-package grails.inspinia.ui
+
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

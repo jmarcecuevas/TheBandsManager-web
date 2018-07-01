@@ -13,7 +13,7 @@ buildscript {
 }
 
 version "0.1"
-group "grails.inspinia.ui"
+group "thebandsmanager"
 
 apply plugin:"eclipse"
 apply plugin:"idea"

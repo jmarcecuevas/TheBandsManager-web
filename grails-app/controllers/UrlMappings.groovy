@@ -1,4 +1,4 @@
-package grails.inspinia.ui
+
 
 class UrlMappings {
 
