@@ -6,41 +6,77 @@
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
                             <span class="block m-t-xs">
-                                <strong class="font-bold">David Williams</strong>
+                                <strong class="font-bold"><sec:username/></strong>
                             </span>
-                            <span class="text-muted text-xs block">Art Director
+                            <span class="text-muted text-xs block">Músico
                                 <b class="caret"></b>
                             </span>
                         </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
                         <li>
-                            <a href="#">Logout</a>
+                            <g:link controller='logout'>Salir</g:link>
                         </li>
                     </ul>
                 </div>
                 <div class="logo-element">
-                    IN+
+                    TBM
                 </div>
             </li>
+
             <li>
-                <a href="/">
-                    <i class="fa fa-th-large"></i>
-                    <span class="nav-label">Main view</span>
-                </a>
+                <a href="#"><i class="fa fa-headphones"></i> <span class="nav-label">Instrumentos</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                        <li> (<g:link controller="instrument" action="add">Crear</g:link> </li>
+                        <li> (<g:link controller="instrument" action="listAdmin">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                    <sec:ifAllGranted roles="ROLE_USER">
+                        <li> (<g:link controller="instrument" action="list">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                </ul>
             </li>
-            <li class="landing_link">
-                <a target="_blank" href="/inspinia/login">
-                    <i class="fa fa-star"></i>
-                    <span class="nav-label">Login Page</span>
-                    <span class="label label-warning pull-right">NEW</span></a>
+
+            <li>
+                <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Roles</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                        <li> (<g:link controller="musicianRole" action="add">Crear</g:link> </li>
+                        <li> (<g:link controller="musicianRole" action="listAdmin">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                    <sec:ifAllGranted roles="ROLE_USER">
+                        <li> (<g:link controller="musicianRole" action="list">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                </ul>
             </li>
-            <li class="special_link">
-                <a href="/inspinia/">
-                    <i class="fa fa-database"></i>
-                    <span class="nav-label">Inspinia Static</span>
-                </a>
+
+            <li>
+                <a href="#"><i class="fa fa-music"></i> <span class="nav-label">Géneros musicales</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                        <li> (<g:link controller="musicGenre" action="add">Crear</g:link> </li>
+                        <li> (<g:link controller="musicGenre" action="listAdmin">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                    <sec:ifAllGranted roles="ROLE_USER">
+                        <li> (<g:link controller="musicGenre" action="list">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                </ul>
             </li>
+
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Bandas</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li> (<g:link controller="band" action="list" >Ver todas</g:link> </li>
+                    <li> (<g:link controller="band" action="add">Crear</g:link> </li>
+                </ul>
+            </li>
+
+            <sec:ifAllGranted roles="ROLE_USER">
+                <li>
+                    <a href="/search/search"><i class="fa fa-search"></i> <span class="nav-label">Búsqueda</span></a>
+                </li>
+            </sec:ifAllGranted>
+
         </ul>
     </div>
 </nav>

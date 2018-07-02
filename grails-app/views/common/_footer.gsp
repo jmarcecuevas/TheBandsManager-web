@@ -1,8 +1,7 @@
 <div class="footer">
-    <div class="pull-right">
-        10GB of <strong>250GB</strong> Free.
+    <div class="pull-right"><strong>Cuevas,Molina,Moyano</strong>
     </div>
     <div>
-        <strong>Copyright</strong> Example Company &copy; 2014-2017
+        <strong>Copyright</strong> TheBandsManager &copy; 2018
     </div>
 </div>

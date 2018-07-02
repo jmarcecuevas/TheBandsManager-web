@@ -51,7 +51,28 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 		//Database
 		[pattern: '/dbconsole/**', access: ['ROLE_ADMIN']],
 
-		[pattern: '/plugins/**', access: ['ROLE_USER']]
+		[pattern: '/plugins/**', access: ['ROLE_USER']],
+
+		[pattern: '/instrument/index', access: ['ROLE_ADMIN','ROLE_USER']],
+		[pattern: '/instrument/add', access: ['ROLE_ADMIN']],
+		[pattern: '/instrument/list', access: ['ROLE_USER']],
+		[pattern: '/instrument/listAdmin', access: ['ROLE_ADMIN']],
+
+		[pattern: '/musicGenre/index', access: ['ROLE_ADMIN','ROLE_USER']],
+		[pattern: '/musicGenre/add', access: ['ROLE_ADMIN']],
+		[pattern: '/musicGenre/list', access: ['ROLE_USER']],
+		[pattern: '/musicGenre/listAdmin', access: ['ROLE_ADMIN']],
+
+		[pattern: '/musicianRole/index', access: ['ROLE_ADMIN','ROLE_USER']],
+		[pattern: '/musicianRole/add', access: ['ROLE_ADMIN']],
+		[pattern: '/musicianRole/list', access: ['ROLE_USER']],
+		[pattern: '/musicianRole/listAdmin', access: ['ROLE_ADMIN']],
+
+		[pattern: '/band/index', access: ['ROLE_ADMIN','ROLE_USER']],
+		[pattern: '/band/add', access: ['ROLE_ADMIN','ROLE_USER']],
+		[pattern: '/band/list', access: ['ROLE_ADMIN','ROLE_USER']],
+
+		[pattern: '/search/search', access: ['ROLE_USER']],
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [
