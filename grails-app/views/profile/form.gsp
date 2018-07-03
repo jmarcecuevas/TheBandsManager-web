@@ -35,7 +35,7 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Nueva banda <small>Ingrese detalles.</small></h5>
+                    <h5>Crear perfil <small>Ingrese detalles.</small></h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -43,51 +43,35 @@
                     </div>
                 </div>
                 <div class="ibox-content">
-
-                    <g:form method="post" class="form-horizontal" action="create">
-                        <div class="form-group"><label class="col-sm-2 control-label">Nombre</label>
-                            <div class="col-sm-10"><input type="text" class="form-control" name="name"></div>
-                        </div>
+                    <g:form method="post" class="form-horizontal" action="add">
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Miembros:</label>
-                            <div class="col-sm-10">
-                                <g:select class="chosen-select" multiple="multiple" optionKey="id" optionValue="lastName"
-                                          name="members" from="${User.list()}"/>
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Roles:</label>
+                            <label class="col-sm-2 control-label">Instrumentos que toca</label>
                             <div class="col-sm-10">
                                 <g:select class="chosen-select" multiple="multiple" optionKey="id" optionValue="name"
-                                          name="roles" from="${thebandsmanager.MusicRole.list()}"/>
+                                          name="instruments" from="${thebandsmanager.Instrument.list()}"/>
                             </div>
-                        </div>
-
-                        <br>
-                        <br>
-
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Género</label>
-                            <div class="col-sm-10">
-                                <g:select class="chosen-select" optionKey="id" optionValue="${{it.name}}"
-                                          name="genre" from="${thebandsmanager.Genre.list()}"/>
-                            </div>
-                        </div>
-
-                        <div class="form-group"><label class="col-sm-2 control-label">Discografía</label>
-                            <div class="col-sm-10"><input type="text" name="discography" class="form-control"></div>
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Músico de contacto</label>
+                            <label class="col-sm-2 control-label">Bandas de la que fue parte</label>
                             <div class="col-sm-10">
-                                <g:select class="chosen-select" optionKey="id" optionValue="lastName"
-                                          name="contact" from="${auth.User.list()}"/>
+                                <g:select class="chosen-select" multiple="multiple" optionKey="id" optionValue="name"
+                                          name="bands" from="${thebandsmanager.Band.list()}"/>
                             </div>
+                        </div>
+
+                        <div class="form-group"><label class="col-sm-2 control-label">Tiempo total en las bandas</label>
+                            <div class="col-sm-3"><input type="number" name="totalTime" min="0" max="90" class="form-control" placeholder="0"></div>
+                        </div>
+
+
+                        <div class="form-group"><label class="col-sm-2 control-label">Canciones compuestas</label>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="songs"></div>
+                        </div>
+
+                        <div class="form-group"><label class="col-sm-2 control-label">¿De qué bandas te hubiera gustado ser parte?</label>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="desiredBands"></div>
                         </div>
 
 
@@ -95,7 +79,7 @@
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
                                 <button class="btn btn-white" type="reset">Cancelar</button>
-                                <button class="btn btn-primary" type="submit">Guardar</button>
+                                <button class="btn btn-primary" type="submit">Guardar cambios</button>
                             </div>
                         </div>
                     </g:form>

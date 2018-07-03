@@ -82,6 +82,10 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 		[pattern: '/band/list', access: ['ROLE_ADMIN','ROLE_USER']],
 		[pattern: '/band/create', access: ['ROLE_USER']],
 
+		[pattern: '/profile/add', access: ['ROLE_USER']],
+		[pattern: '/profile/form', access: ['ROLE_USER']],
+		[pattern: '/profile/index', access: ['ROLE_USER']],
+
 		[pattern: '/postulation/index', access: ['ROLE_USER']],
 		[pattern: '/postulation/form', access: ['ROLE_USER']],
 		[pattern: '/postulation/add', access: ['ROLE_USER']],

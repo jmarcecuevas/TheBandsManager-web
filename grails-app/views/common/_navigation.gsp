@@ -33,6 +33,15 @@
                 </div>
             </li>
 
+
+            <sec:ifAllGranted roles="ROLE_USER">
+                <li>
+
+                    <a href="/profile/index"><i class="fa fa-user"></i> <span class="nav-label">Perfil</span></a>
+                </li>
+            </sec:ifAllGranted>
+
+
             <li>
                 <a href="#"><i class="fa fa-headphones"></i> <span class="nav-label">Instrumentos</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
@@ -75,11 +84,7 @@
             <li>
                 <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Bandas</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <sec:ifAllGranted roles="ROLE_ADMIN">
-                        <li> (<g:link controller="band" action="list">Ver todos</g:link> </li>
-                    </sec:ifAllGranted>
                     <sec:ifAllGranted roles="ROLE_USER">
-                        <li> (<g:link controller="band" action="list">Ver todos</g:link> </li>
                         <li> (<g:link controller="band" action="add">Crear</g:link> </li>
                     </sec:ifAllGranted>
                 </ul>
