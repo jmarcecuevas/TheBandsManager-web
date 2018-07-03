@@ -78,6 +78,8 @@ dependencies {
     compile group: 'org.webjars', name: 'font-awesome', version: '4.7.0'
     // https://bintray.com/bertramlabs/asset-pipeline/asset-pipeline-grails
     compile 'com.bertramlabs.plugins:sass-asset-pipeline:2.14.7'
+
+    runtime 'mysql:mysql-connector-java:5.1.36'
 }
 
 bootRun {
