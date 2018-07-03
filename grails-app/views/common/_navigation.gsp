@@ -8,9 +8,18 @@
                             <span class="block m-t-xs">
                                 <strong class="font-bold"><sec:username/></strong>
                             </span>
-                            <span class="text-muted text-xs block">Músico
-                                <b class="caret"></b>
-                            </span>
+
+                            <sec:ifAllGranted roles="ROLE_ADMIN">
+                                <span class="text-muted text-xs block">Administrador
+                                    <b class="caret"></b>
+                                </span>
+                            </sec:ifAllGranted>
+                            <sec:ifAllGranted roles="ROLE_USER">
+                                <span class="text-muted text-xs block">Músico
+                                    <b class="caret"></b>
+                                </span>
+                            </sec:ifAllGranted>
+
                         </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
@@ -66,16 +75,21 @@
             <li>
                 <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Bandas</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li> (<g:link controller="band" action="list" >Ver todas</g:link> </li>
-                    <li> (<g:link controller="band" action="add">Crear</g:link> </li>
+                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                        <li> (<g:link controller="band" action="list">Ver todos</g:link> </li>
+                    </sec:ifAllGranted>
+                    <sec:ifAllGranted roles="ROLE_USER">
+                        <li> (<g:link controller="band" action="list">Ver todos</g:link> </li>
+                        <li> (<g:link controller="band" action="add">Crear</g:link> </li>
+                    </sec:ifAllGranted>
                 </ul>
             </li>
 
-            <sec:ifAllGranted roles="ROLE_USER">
-                <li>
-                    <a href="/search/search"><i class="fa fa-search"></i> <span class="nav-label">Búsqueda</span></a>
-                </li>
-            </sec:ifAllGranted>
+            %{--<sec:ifAllGranted roles="ROLE_USER">--}%
+                %{--<li>--}%
+                    %{--<a href="/search/search"><i class="fa fa-search"></i> <span class="nav-label">Búsqueda</span></a>--}%
+                %{--</li>--}%
+            %{--</sec:ifAllGranted>--}%
 
             <sec:ifAllGranted roles="ROLE_USER">
                 <li>

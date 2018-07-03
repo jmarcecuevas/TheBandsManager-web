@@ -26,14 +26,14 @@
                             <th>ID</th>
                             <th>Nombre</th>
                             <th>Instrumento</th>
-                            <th></th>
-                            <th></th>
+                            %{--<th></th>--}%
                         </tr>
                         </thead>
                         <tbody>
                             <g:each in="${roles}">
                                 <tr>
-                                    <td>${it.id}</td>
+                                    <g:form controller="musicianRole" action="remove">
+                                    <td>${it.id} <input type="text" value="${it.id}" class="hideme" name="id"></td>
                                     <td>${it.name}</td>
                                     <td>
                                         <g:if test="${it.instrument}">
@@ -43,9 +43,10 @@
 
                                         </g:else>
                                     </td>
-                                    <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                                    %{--<td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>--}%
-                                    <td> <g:actionSubmit value="name" onclick="return confirm('Are you sure???')" /></td>
+                                    %{--<td>--}%
+                                        %{--<g:actionSubmit class="btn-rounded btn-danger" value="remove" action="remove"/>--}%
+                                    %{--</td>--}%
+                                    </g:form>
                                 </tr>
                             </g:each>
                         </tbody>
@@ -56,5 +57,19 @@
         </div>
     </div>
 </div>
+
+<style>
+.hideme
+{
+    display:none;
+    visibility:hidden;
+}
+.showme
+{
+    display:inline;
+    visibility:visible;
+}
+</style>
+
 </body>
 </html>

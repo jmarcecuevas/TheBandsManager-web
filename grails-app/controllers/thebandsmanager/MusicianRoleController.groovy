@@ -24,8 +24,12 @@ class MusicianRoleController {
         [roles: roles]
     }
 
-    def name(){
-        render(view: "/common/success")
+    def remove(){
+        print(params.id)
+        def role = MusicRole.get(params.id)
+        print(role.name)
+        role.delete(flush:true)
+        render(view: "/common/removeSuccess")
     }
 
 

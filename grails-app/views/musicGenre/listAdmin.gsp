@@ -25,8 +25,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th></th>
-                            <th></th>
+                            %{--<th></th>--}%
+                            %{--<th></th>--}%
                         </tr>
                         </thead>
                         <tbody>
@@ -34,8 +34,8 @@
                                 <tr>
                                     <td>${it.id}</td>
                                     <td>${it.name}</td>
-                                    <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                                    <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
+                                    %{--<td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>--}%
+                                    %{--<td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>--}%
                                 </tr>
                             </g:each>
                         </tbody>

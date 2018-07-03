@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | 500 Error</title>
+    <title>TheBandsManager | 500 Error</title>
 
 
     <asset:stylesheet src="application.css"/>
