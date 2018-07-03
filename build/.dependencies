@@ -29,7 +29,7 @@ dependencies:
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.196/dd0034398d593aa3588c6773faac429bbd9aea0e/h2-1.4.196.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.23/6036400a8f2d90dd3ae3a4d09e5136c56002887b/tomcat-jdbc-8.5.23.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/com.bertramlabs.plugins/asset-pipeline-grails/2.14.6/23889d1725fae5f1705a90bca409fad3e8721b98/asset-pipeline-grails-2.14.6.jar
-- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.36/6bb5861f44c21c775ee713a438e5bc493c095f7a/mysql-connector-java-5.1.36.jar
+- file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.46/9a3e63b387e376364211e96827bc27db8d7a92e9/mysql-connector-java-5.1.46.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails/grails-gorm-testing-support/1.1.3/872f405ec6e64c0cd6f40a047333b04ccbb110f5/grails-gorm-testing-support-1.1.3.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-testing-support/1.1.3/1fbdd9d5017779c9fd365cf5b6fda8400b4574c3/grails-web-testing-support-1.1.3.jar
 - file:/Users/marcelocuevas/.gradle/caches/modules-2/files-2.1/org.grails.plugins/geb/1.1.3/b3d0a7dbf018100cf177516927e25ade4146665b/geb-1.1.3.jar

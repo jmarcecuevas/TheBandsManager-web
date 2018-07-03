@@ -23,33 +23,26 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>#</th>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th>Instrumentos</th>
-                            <th></th>
-                            <th></th>
+                            <th>Instrumento</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                        </tr>
+                            <g:each in="${roles}">
+                                <tr>
+                                    <td>${it.id}</td>
+                                    <td>${it.name}</td>
+                                    <td>
+                                        <g:if test="${it.instrument}">
+                                            ${it.instrument.name}
+                                        </g:if>
+                                        <g:else>
+
+                                        </g:else>
+                                    </td>
+                                </tr>
+                            </g:each>
                         </tbody>
                     </table>
 

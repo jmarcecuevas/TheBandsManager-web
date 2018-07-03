@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="auth.User" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Crear banda</title>
@@ -45,22 +45,17 @@
                 <div class="ibox-content">
 
 
-                    <form method="get" class="form-horizontal">
+                    <g:form method="post" class="form-horizontal" action="create">
                         <div class="form-group"><label class="col-sm-2 control-label">Nombre</label>
-                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                            <div class="col-sm-10"><input type="text" class="form-control" name="name"></div>
                         </div>
 
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Miembros:</label>
                             <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-
-                                </select>
+                                <g:select class="chosen-select" multiple="multiple" optionKey="id" optionValue="firstName"
+                                          name="members" from="${users}"/>
                             </div>
                         </div>
 
@@ -69,72 +64,26 @@
 
                         <h4 align="center" class="text-warning" data-color="#ffffff">Roles dentro de la banda</h4>
 
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Cantantes</label>
-                            <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-
-                                </select>
+                        <g:each in="${thebandsmanager.MusicRole.list()}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">${it.name}</label>
+                                <div class="col-sm-10">
+                                    <g:select class="chosen-select" multiple="multiple" optionKey="id"  optionValue="lastName"
+                                              name="users" from="${users}"/>
+                                </div>
                             </div>
-                        </div>
+                        </g:each>
 
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Bateristas</label>
-                            <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Guitarristas</label>
-                            <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Bajistas</label>
-                            <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-                                </select>
-                            </div>
-                        </div>
+                        <br>
+                        <br>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Género</label>
                             <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-
-                                </select>
+                                <g:select class="chosen-select" optionKey="id" optionValue="${{it.name}}"
+                                          name="genre" from="${thebandsmanager.Genre.list()}"/>
                             </div>
                         </div>
-
-                        <br>
-                        <br>
 
                         <div class="form-group"><label class="col-sm-2 control-label">Discografía</label>
                             <div class="col-sm-10"><input type="text" class="form-control"></div>
@@ -143,12 +92,8 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Músico de contacto</label>
                             <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-                                </select>
+                                <g:select class="chosen-select" optionKey="id" optionValue="lastName"
+                                          name="contact" from="${auth.User.list()}"/>
                             </div>
                         </div>
 
@@ -156,11 +101,11 @@
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <button class="btn btn-white" type="submit">Cancel</button>
+                                <button class="btn btn-white" type="reset">Cancel</button>
                                 <button class="btn btn-primary" type="submit">Save changes</button>
                             </div>
                         </div>
-                    </form>
+                    </g:form>
                 </div>
             </div>
         </div>

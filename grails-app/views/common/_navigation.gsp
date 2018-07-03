@@ -77,6 +77,11 @@
                 </li>
             </sec:ifAllGranted>
 
+            <sec:ifAllGranted roles="ROLE_USER">
+                <li>
+                    <a href="/postulation/form"><i class="fa fa-search"></i> <span class="nav-label">Postulación</span></a>
+                </li>
+            </sec:ifAllGranted>
         </ul>
     </div>
 </nav>

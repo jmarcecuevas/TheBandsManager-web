@@ -45,71 +45,30 @@
                 <div class="ibox-content">
 
 
-                    <form method="get" class="form-horizontal">
+                    <g:form method="post" class="form-horizontal" action="create">
                         <div class="form-group"><label class="col-sm-2 control-label">Nombre</label>
-                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                            <div class="col-sm-10"><input type="text" name="name" class="form-control"></div>
                         </div>
 
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Instrumentos:</label>
-                            <div class="col-sm-10">
-                                <select data-placeholder="Selecciona un instrumento..." class="chosen-select" multiple style="width:350px;" tabindex="4">
-                                    <option value="United States">United States</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Aland Islands">Aland Islands</option>
-                                    <option value="Albania">Albania</option>
-                                    <option value="Algeria">Algeria</option>
-                                    <option value="American Samoa">American Samoa</option>
-                                    <option value="Andorra">Andorra</option>
-                                    <option value="Angola">Angola</option>
-                                    <option value="Anguilla">Anguilla</option>
-                                    <option value="Antarctica">Antarctica</option>
-                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Armenia">Armenia</option>
-                                    <option value="Aruba">Aruba</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Austria">Austria</option>
-                                    <option value="Azerbaijan">Azerbaijan</option>
-                                    <option value="Bahamas">Bahamas</option>
-                                    <option value="Bahrain">Bahrain</option>
-                                    <option value="Bangladesh">Bangladesh</option>
-                                    <option value="Barbados">Barbados</option>
-                                    <option value="Belarus">Belarus</option>
-                                    <option value="Belgium">Belgium</option>
-                                    <option value="Belize">Belize</option>
-                                    <option value="Benin">Benin</option>
-                                    <option value="Bermuda">Bermuda</option>
-                                    <option value="Bhutan">Bhutan</option>
-                                    <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
-                                    <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
-                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                    <option value="Botswana">Botswana</option>
-                                    <option value="Bouvet Island">Bouvet Island</option>
-                                    <option value="Brazil">Brazil</option>
-                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-                                    <option value="Brunei Darussalam">Brunei Darussalam</option>
-                                    <option value="Bulgaria">Bulgaria</option>
-                                    <option value="Burkina Faso">Burkina Faso</option>
-                                    <option value="Burundi">Burundi</option>
-                                    <option value="Cambodia">Cambodia</option>
-                                    <option value="Cameroon">Cameroon</option>
-                                    <option value="Canada">Canada</option>
-
-                                </select>
+                            <label class="col-sm-1 control-label">Instrumento</label>
+                            <br>
+                            <label class="text-white">"Ins"</label>
+                            <div>
+                                <g:select class="chosen-select" optionKey="id" optionValue="${{it.name}}"
+                                          name="instrument" from="${instruments}"/>
                             </div>
                         </div>
 
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <button class="btn btn-white" type="submit">Cancel</button>
+                                <button class="btn btn-white" type="reset">Cancel</button>
                                 <button class="btn btn-primary" type="submit">Save changes</button>
                             </div>
                         </div>
-                    </form>
+                    </g:form>
                 </div>
             </div>
         </div>

@@ -23,7 +23,6 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>#</th>
                             <th>ID</th>
                             <th>Nombre</th>
                             <th></th>
@@ -31,27 +30,12 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
+                        <g:each in="${instruments}">
+                            <tr>
+                                <td>${it.id}</td>
+                                <td>${it.name}</td>
+                            </tr>
+                        </g:each>
                         </tbody>
                     </table>
 

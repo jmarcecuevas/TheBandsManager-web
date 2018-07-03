@@ -23,39 +23,31 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>#</th>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th>Instrumentos</th>
+                            <th>Instrumento</th>
                             <th></th>
                             <th></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>Acordeón,Armónica,Armonio,Arpa,Bajo.</td>
-                            <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
-                            <td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>
-                        </tr>
+                            <g:each in="${roles}">
+                                <tr>
+                                    <td>${it.id}</td>
+                                    <td>${it.name}</td>
+                                    <td>
+                                        <g:if test="${it.instrument}">
+                                            ${it.instrument.name}
+                                        </g:if>
+                                        <g:else>
+
+                                        </g:else>
+                                    </td>
+                                    <td> <button type="button" class="btn-rounded btn-warning" >Editar</button> </td>
+                                    %{--<td> <button type="button" class="btn-rounded btn-danger">Eliminar</button> </td>--}%
+                                    <td> <g:actionSubmit value="name" onclick="return confirm('Are you sure???')" /></td>
+                                </tr>
+                            </g:each>
                         </tbody>
                     </table>
 

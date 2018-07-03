@@ -94,19 +94,35 @@ hibernate:
 
 
 
+#dataSource:
+#    pooled: true
+#    jmxExport: true
+#    driverClassName: com.mysql.jdbc.Driver
+#    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#    username: sql10245767
+#    password: BThe6Ir5jK
+#
+#environments:
+#    development:
+#        dataSource:
+#            dbCreate: create-drop
+#            url: jdbc:mysql://sql10.freesqldatabase.com/sql10245767
+
+
 dataSource:
     pooled: true
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver
     dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    username: sql10245767
-    password: BThe6Ir5jK
+    username: root
+    password: t3ch.rocks
 
 environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:mysql://sql10.freesqldatabase.com/sql10245767
+            url: jdbc:mysql://localhost:3306/the
+
 #dataSource:
 #    pooled: true
 #    jmxExport: true

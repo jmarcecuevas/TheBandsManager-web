@@ -10,13 +10,19 @@ class InstrumentController {
 
     }
 
-    def list(){
+    def create(){
+        def instrument = new Instrument(name: params.name)
+        instrument.save()
+        render(view: "/common/success")
+    }
 
+    def list(){
+        def instruments = Instrument.list()
+        [instruments: instruments]
     }
 
     def listAdmin(){
-
+        def instruments = Instrument.list()
+        [instruments: instruments]
     }
-
-
 }
