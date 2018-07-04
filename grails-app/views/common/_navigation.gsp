@@ -82,12 +82,12 @@
             </li>
 
             <li>
-                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Bandas</span><span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse">
-                    <sec:ifAllGranted roles="ROLE_USER">
-                        <li> (<g:link controller="band" action="add">Crear</g:link> </li>
-                    </sec:ifAllGranted>
-                </ul>
+                <sec:ifAllGranted roles="ROLE_USER">
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Bandas</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                            <li> (<g:link controller="band" action="add">Crear</g:link> </li>
+                    </ul>
+                </sec:ifAllGranted>
             </li>
 
             %{--<sec:ifAllGranted roles="ROLE_USER">--}%

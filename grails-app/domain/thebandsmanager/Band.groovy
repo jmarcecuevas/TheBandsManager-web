@@ -18,6 +18,7 @@ class Band {
     static constraints = {
         discography nullable: true
         roles nullable: true
+        genre nullable: true
         members nullable: true
         contact nullable: true
     }

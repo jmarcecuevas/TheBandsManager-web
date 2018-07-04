@@ -28,7 +28,7 @@ class MusicianRoleController {
         print(params.id)
         def role = MusicRole.get(params.id)
         print(role.name)
-        role.delete(flush:true)
+        role.delete(failOnError: true)
         render(view: "/common/removeSuccess")
     }
 

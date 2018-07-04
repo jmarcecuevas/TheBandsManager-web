@@ -11,7 +11,7 @@ class BandController {
 
     def create(){
         def band = new Band(name: params.name,discography: params.discography,contact: User.get(params.contact))
-        band.save()
+        band.save(failOnError: true)
 
         params.get("members").each {id ->
             band.addToMembers(User.get(id as Serializable))
@@ -20,7 +20,6 @@ class BandController {
         params.get("roles").each {id ->
             band.addToRoles(MusicRole.get(id as Serializable))
         }
-
         render(view: "/common/success")
     }
 
